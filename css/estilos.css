@@ -59,6 +59,7 @@ section{
     width: 500px;
     object-fit: contain;
     align-self: flex-start;
+    cursor: pointer;
 }
 .imgMiniatura{
     margin-top: 80px;
@@ -107,6 +108,7 @@ button{
     border: 1px solid #222;
     font-family: 'Fredoka One', cursive;
     margin-top: 10px;
+    cursor: pointer;
 }
 button:hover{
     background-color: #eb2421;
@@ -179,6 +181,7 @@ footer .container a{
     font-family: arial, sans-serif;
     text-shadow: 0px 0px 1px rgb(70, 68, 68);
     text-decoration: none;
+    cursor: pointer;
 }
 footer .container a:hover{
     color: #5699c0;
