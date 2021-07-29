@@ -1,3 +1,3 @@
 CHILDS-PLAY-2-GOOD-GUY-DOLL-Landing-Page
 
-Página de Apresentação na qual desenvolvi para praticar HTML e CSS3
+Página de Apresentação que desenvolvi para praticar HTML5 e CSS3.
