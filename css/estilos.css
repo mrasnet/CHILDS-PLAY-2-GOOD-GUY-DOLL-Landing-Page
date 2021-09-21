@@ -18,30 +18,37 @@ header{
     box-shadow: 1px 1px 5px #222;
 }
 #pageHome{
-    width: 400px;
     display: flex;
-    padding-left: 20px;
-    padding-right: 20px;
+    justify-content: center;
+    text-decoration: none;
+}
+header div{
+    display: flex;
+    justify-content: center;
+    padding: 0px 35px;
 }
 header img{
-    width: 140px;
+    width: 100px;
     object-fit: contain;
-    margin-left: 20px;
 }
 header h1{
-    font-size: 60px;
+    font-size: 50px;
     color: #3b91ce;
     text-shadow: 2px 2px 3px #fff;
-    margin-left: 30px;
+    margin: 15px 0px;
+    padding-right: 20px;
+    text-align: center;
+    width: 200px;
 }
 header h2{
-    font-size: 40px;
+    font-size: 33px;
     color: #eb2421;
     text-shadow: 2px 2px 3px #fff;
     margin: 0px;
     border-left: 3px solid #fff;
-    padding: 15px 30px 15px;
+    padding-left: 35px;
     align-self: center;
+    max-width: 241px;
 }
 
 .container{
@@ -62,42 +69,30 @@ section{
     height: auto;
     background-color: #fff;
     display: flex;
-    margin-top: 50px;
+    margin-top: 30px;
     justify-content: center;
      /* background: linear-gradient(#fff, #222); 180deg valor padrão */
 }
-#ImagesContainer{
-    display: flex;
-    flex-direction: column;
-    margin-right: 45px;
-    margin-top: 45px;
-}
 #mainImageContainer{
-    display: flex;
+    margin-right: 30px;
+    margin-top: 90px;
+    padding-left: 20px;
 }
 #mainImageContainer #productImage{
     cursor: pointer;
     object-fit: cover;
-    height: 600px;
-    width: 410px;
+    height: 538px;
+    width: 365px;
     padding-bottom: 10px;
 }   
-#imgMiniatura, #imgMiniaturaResponsivo{
+#imgMiniatura, #imgMiniatura--MobileResponsive{
+    display: flex;
+    border-top: 1px solid #777;
     padding-top: 10px;
     margin-bottom: 25px;
 }
-#imgMiniatura{
-    display: flex;
-    border-top: 1px solid #777;
-}
-#imgMiniaturaResponsivo{
-    display: none;
-    flex-direction: column;
-    width: 50px;
-    padding-right: 10px;
-}
-#imgMiniatura img, #imgMiniaturaResponsivo img{
-    height: 110px;
+#imgMiniatura img, #imgMiniatura--MobileResponsive img{
+    height: 90px;
     margin-top: 5px;
     cursor: pointer;
     object-fit: contain;
@@ -105,52 +100,56 @@ section{
     box-shadow: 1px 1px 2px #777;
     padding-right: 5px;
 }
+#imgMiniatura--MobileResponsive{
+    display: none;
+}
 #produtcDiscriptionSide{
-    width: 300px;
+    max-width: 327px;
+    padding-right: 20px;
 }
 section h1{
     color: #fff600;
-    font-size: 45px;
+    font-size: 37px;
     text-shadow: 3px 3px 3px #5699c0;
 }
-.price{
-    font-size: 60px;
+#price{
+    font-size: 62px;
     color: #eb2421;
     text-shadow: 3px 3px 3px #5699c0;
     margin-bottom: 13px;
 }
-.painelItenscompra form{
+#painelItenscompra form{
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;  
 }
+
 label{
     text-shadow: 2px 2px 2px #5699c0;
     color: #eb2421;;
     align-self: center;
     font-size: 25px;
+    display: flex; 
+    flex-direction: column;
 }
 
 input[type='number']{
     margin-top: 5px;
     font-size: 28px;
-    width: 50px;
+    width: 53px;
+    padding: 4px 8px;
     color: #eb2421;
     font-family: 'Fredoka One', cursive;
-    padding: 4px;
+    border-radius: 4px;
     text-shadow: 2px 2px 2px #5699c0;
 }
-input[type='number'], button{
-    border-radius: 4px;
-    padding-left: 10px;
-}
 button{
-    width: 200px;
-    height: 60px;
+    width: 170px;
+    border-radius: 4px;
     background-color: #fff600;
     color: #5699c0;
     text-shadow: 2px 2px 2px #FFF;
-    font-size: 30px;
-    padding: 5px;
+    font-size: 25px;
+    padding: 15px 5px;
     border: 1px solid #222;
     font-family: 'Fredoka One', cursive;
     margin-top: 10px;
@@ -170,28 +169,21 @@ button{
 #description{
     margin-top: 40px;
 }
-#descriptionResponsivo{
-    display: none;
-    margin: auto;
-    padding-left: 40px;
-    padding-right: 40px;
-    margin-top: 10px;
-    margin-bottom: 30px;
-}
 p{
     text-align: justify;
-    font-size: 20px;
-    line-height: 25px;
+    font-size: 16px;
+    line-height: 24px;
     color: #777;
     font-family: arial, sans-serif;
     text-shadow: 0px 0px 1px rgb(70, 68, 68);
 }
 #infoProduct{
     background-color: #5699c0;
+    padding: 30px 0px;
 }
 #infoProduct .container div{
     flex: 1;
-    padding: 15px;
+    padding: 0px 20px;
 }
 #infoProduct p{
     color: #fff;
@@ -204,19 +196,18 @@ h3{
     text-shadow: 1px 1px 1px rgb(70, 69, 69);
 }
 
-#sectionCad .container div{
-    margin-top: 50px;
-    align-self: flex-start;
+#registerArea{
+    padding-right: 50px;
 }
 #sectionCad img{
-    width: 470px;
+    width: 400px;
 }
 #sectionCad button{
-    margin-left: 165px;
+    width: 100%;
 }
 input[type='email']{
-    font-size: 22px;
-    width: 370px;
+    font-size: 15px;
+    width: 100%;
     height: 30px;
     border-radius: 4px;
     margin-bottom: 10px;
@@ -225,23 +216,21 @@ footer{
     background-color: #222;
     height: 120px;
     width: 100%;
+    margin: auto;
     display: flex;
     justify-content: center;
 }
 footer .container{
-    padding-top: 20px;
-    display: flex;
+    padding: 20px 30px;
     flex-direction: column;
-    align-items: center;
-    justify-content: flex-end;
-    margin-bottom: 15px;
+    padding: 20px 13px;
 }
 footer .container p{
     margin: 0px;
     margin-top: 5px;
 }
 footer .container a{
-    font-size: 22px;
+    font-size: 16px;
     line-height: 25px;
     color: #777;
     font-family: arial, sans-serif;
@@ -262,56 +251,12 @@ footer .container #linkGITHub:hover{
     color: #80a3b8;
 }
 
-
-@media(max-width:920px){
-  
-    #ImagesContainer{
-        margin-right: 20px;
-    }
-
-    #mainImageContainer #productImage{
-        height: 410px;
-        width: 280px;
-        margin-left: 10px;
-    }   
-    #imgMiniaturaResponsivo img{
-        height: 70px;
-        margin-top: 5px;
-        cursor: pointer;
-        object-fit: contain;
-        margin-left: 15px;
-    }
-    #produtcDiscriptionSide{
-        width: 230px;
-    }
-    #produtoContainer .container{
+@media (max-width: 800px){
+    .container{
         width: auto;
     }
-    button{
-        font-size: 25px;
-    }
-
-    section h1{
-        font-size: 40px;
-    }
-    .price{
-        font-size: 50px;
-    }
-    label{
-        font-size: 20px;
-    }
-    #description{
-        display: none;
-    }
-    #descriptionResponsivo{
-        display: block;
-    }
-    #imgMiniatura{
-        display: none;
-    }
-    #imgMiniaturaResponsivo{
-        display: flex;
-    }
+}
+@media (max-width: 776px){
     #sectionCad{
         flex-direction: column;
         align-items: center;
@@ -319,51 +264,120 @@ footer .container #linkGITHub:hover{
     #sectionCad img{
         width: 390px;
     }
+    #sectionCad form{
+        width: 270px;
+    }
     #registerArea{
         display: flex;
-        flex-direction: column;
-        
-    }
-    #registerArea div{
-        display: flex;
-        justify-content: flex-end;
+        flex-direction: column;    
+        align-items: center;  
+        padding-right: 0px;
     }
     #registerArea form{
         display: flex;
         flex-direction: column;
-        margin-bottom: 40px;
+        margin-bottom: 70px;
+    }
+    #registerArea h1{
+        margin-top: 0px;
+        width: 295px;
     }
     footer p, #linkGITHub, #linkTorT{
         font-size: 17px;
+        text-align: center;
     }
-    
+}
+@media (max-width: 721px){
 
+    #infoProduct .container{
+        display: flex;
+        flex-direction: column;
+    }
+    #infoProduct .container h3{
+        text-align: center;
+    }
+    #infoProduct .container p{
+        text-align: center;
+        padding: 0px 25px;
+    }
+    #infoProduct .container div{
+        padding: 0px;
+    }
 }
 
-@media (max-width:730px){
-
-    header .container{
+@media(max-width: 711px){
+    header div{
+        flex-direction: column;
+    }
+    header h1, header h2{
+        margin: 0px;
+    }
+    header h1{
+        font-size: 27px;
+        width: 100px;
+        margin-top: 7px;
+        margin-bottom: 4px;
+    }
+    header h2{
+        border: 0;
+        font-size: 18px;
+        margin-bottom: 8px;
+        padding-left: 0;
+    }
+    header img{
+        width: 50px;
+        margin-top: 7px;
+    }
+    .produtoArea{
         flex-direction: column;
         justify-content: center;
         align-items: center;
+        margin-top: 15px;
     }
-    #pageHome{
-        width: 300px;
-        padding-top: 0px;
-        padding-bottom: 0px;
+    #mainImageContainer{
+        margin-right: 0px;
+        margin-top: 30px; 
     }
-    header img{
-        width: 90px;
+    #imgMiniatura{
+        display: none;
     }
-    header h1{
-        font-size: 40px;
+    #imgMiniatura--MobileResponsive{
+        display: flex;
+    } 
+    #painelItenscompra{
+        width: 283px;
     }
-    header h2{
-        font-size: 25px;
-        padding-top: 0px;
-        border: 0px;
-        text-align: center;
+    #description{
+        margin-bottom: 40px;
+        padding: 0px 20px;      
     }
-
-
+    #produtcDiscriptionSide h1{
+        padding-left: 20px;
+        margin: 13px 0px;
+    }
+    #produtcDiscriptionSide{
+        max-width: 1000px;/* Para retirar o definido de 327px, para conseguir ficar largura automática */
+        width: auto;
+        padding: 0px 35px;
+    }
+    #price, #painelItenscompra{
+        padding-left: 30px;
+    }
+}
+@media (max-width: 540px){
+    #registerArea{
+        padding-right: 0px;
+    }
+    footer p, #linkGITHub, #linkTorT{
+        font-size: 13px;
+    }
+}
+@media (max-width: 477px){
+    #mainImageContainer #productImage {
+        height: 438px;
+        width: 299px;
+    }
+    #imgMiniatura img, #imgMiniatura--MobileResponsive img {
+        height: 55px;
+    }
 }

@@ -12,8 +12,8 @@
 </head>
 <body>
     <header>
-        <div class="container">
-            <a id="pageHome" href="" style="display: flex; text-decoration: none;" >
+        <div>
+            <a id="pageHome" href="">
                 <img src="images/logogoodguy.jpg" alt="Good Guy home">
                 <h1>Wanna Play?</h1>
             </a>
@@ -23,44 +23,34 @@
     </header>
 
     <section id="produtoContainer">
+ 
         <div class="produtoArea container">
+            <div id="mainImageContainer">
+                <img id="productImage" src="images/chuckyrealsize.jpg" alt="Chucky Good Guy Doll" onclick="mudaFoto('images/chuckyrealsize.jpg')" >
+            </div> 
 
-            <div id="ImagesContainer">
-
-                <div id="mainImageContainer">
-                    <div id="imgMiniaturaResponsivo">
-                        <img src="images/chuckyrealsize.jpg" alt=""  onclick="mudaFoto('images/chuckyrealsize.jpg')" >
-                        <img src="images/chuckyrealsize2.jpg" alt="" onclick="mudaFoto('images/chuckyrealsize2.jpg')"> 
-                        <img src='images/chuckyrealsize4.png' alt="" onclick="mudaFoto('images/chuckyrealsize4.png')">
-                        <img src="images/chuckyrealsize3.jpg" alt="" onclick="mudaFoto('images/chuckyrealsize3.jpg')">
-                        <img src="images/chuckyrealsize5.jpg" alt=""  onclick="mudaFoto('images/chuckyrealsize5.jpg')" >            
-                    </div>
-
-                    <img id="productImage" src="images/chuckyrealsize.jpg" alt="Chucky Good Guy Doll" onclick="mudaFoto('images/chuckyrealsize.jpg')" >
-                </div> 
-
-                <div id="imgMiniatura">
-                    <img src="images/chuckyrealsize.jpg" alt=""  onclick="mudaFoto('images/chuckyrealsize.jpg')" >
-                    <img src="images/chuckyrealsize2.jpg" alt="" onclick="mudaFoto('images/chuckyrealsize2.jpg')"> 
-                    <img src='images/chuckyrealsize4.png' alt="" onclick="mudaFoto('images/chuckyrealsize4.png')">
-                    <img src="images/chuckyrealsize3.jpg" alt="" onclick="mudaFoto('images/chuckyrealsize3.jpg')">
-                    <img src="images/chuckyrealsize5.jpg" alt=""  onclick="mudaFoto('images/chuckyrealsize5.jpg')" >            
-                </div>
+            <div id="imgMiniatura--MobileResponsive">
+                <img src="images/chuckyrealsize.jpg" alt=""  onclick="mudaFoto('images/chuckyrealsize.jpg')" >
+                <img src="images/chuckyrealsize2.jpg" alt="" onclick="mudaFoto('images/chuckyrealsize2.jpg')"> 
+                <img src='images/chuckyrealsize4.png' alt="" onclick="mudaFoto('images/chuckyrealsize4.png')">
+                <img src="images/chuckyrealsize3.jpg" alt="" onclick="mudaFoto('images/chuckyrealsize3.jpg')">
+                <img src="images/chuckyrealsize5.jpg" alt=""  onclick="mudaFoto('images/chuckyrealsize5.jpg')" >            
             </div>
-            
 
             <div id="produtcDiscriptionSide">
                 <h1>CHILD'S PLAY 2 - GOOD GUYS DOLL</h1>
-                <div class="price">$499.99</div>
-                <div class="painelItenscompra">
+
+                <div id="price">$499.99</div>
+                <div id="painelItenscompra">
                     <form action="">
                         <label>Qty
                             <input type="number" value="1" name="qtd" min="1" max="30">
                         </label> 
+                        
                         <button>Buy it now</button>
                     </form> 
                 </div>
-                
+               
                 <p id="description">
                     Developed by Garrett Zima<br><br>
                     The Officially Licensed One-To-One Scale Child’s Play 2 Chucky Doll is the most screen accurate Child’s Play Product ever produced. 
@@ -70,34 +60,34 @@
             </div>
         </div> 
 
-        <div id="descriptionResponsivo">
-            <p>
-                Developed by Garrett Zima<br><br>
-                The Officially Licensed One-To-One Scale Child’s Play 2 Chucky Doll is the most screen accurate Child’s Play Product ever produced. 
-                Every detail of this doll is made from actual screen used molds, including the clothing which was replicated using actual screen used 
-                swatches.
-            </p> 
+        <div id="imgMiniatura">
+            <img src="images/chuckyrealsize.jpg" alt=""  onclick="mudaFoto('images/chuckyrealsize.jpg')" >
+            <img src="images/chuckyrealsize2.jpg" alt="" onclick="mudaFoto('images/chuckyrealsize2.jpg')"> 
+            <img src='images/chuckyrealsize4.png' alt="" onclick="mudaFoto('images/chuckyrealsize4.png')">
+            <img src="images/chuckyrealsize3.jpg" alt="" onclick="mudaFoto('images/chuckyrealsize3.jpg')">
+            <img src="images/chuckyrealsize5.jpg" alt=""  onclick="mudaFoto('images/chuckyrealsize5.jpg')" >            
         </div>
+    </div>
 
-    </section>
+</section>
 
-    <section id="infoProduct">
-        
-        <div class="container">
-            <div>
-                <h3>About the product</h3>
-                <p>The body of the doll is made using soft flexible foam surrounding an industrial strength poseable aluminum frame.</p>
-                <p>Child's Play 2 is a trademark and copyright of Universal Studios. Licensed by Universal Studios LLC. All rights reserved.</p>
-            </div>
-            <div>
-                <h3>Cancellation Policy</h3>
-                <p> Trick or Treat Studios does not accept cancellations after an order has been placed. Please note this includes "Pre-Orders" and orders "On Hold"</p>
-            </div>
-            <div>
-                <h3>Return Policy</h3>
-                <p>Trick or Treat Studios will accept returns on manufacturing defects only. All claims must be made within 5 days of receipt of merchandise. All returns must be pre-approved. In the event of any mistake on your order, please contact us immediately.</p>
-            </div>
+<section id="infoProduct">
+    
+    <div class="container">
+        <div>
+            <h3>About the product</h3>
+            <p>The body of the doll is made using soft flexible foam surrounding an industrial strength poseable aluminum frame.</p>
+            <p>Child's Play 2 is a trademark and copyright of Universal Studios. Licensed by Universal Studios LLC. All rights reserved.</p>
         </div>
+        <div>
+            <h3>Cancellation Policy</h3>
+            <p> Trick or Treat Studios does not accept cancellations after an order has been placed. Please note this includes "Pre-Orders" and orders "On Hold"</p>
+        </div>
+        <div>
+            <h3>Return Policy</h3>
+            <p>Trick or Treat Studios will accept returns on manufacturing defects only. All claims must be made within 5 days of receipt of merchandise. All returns must be pre-approved. In the event of any mistake on your order, please contact us immediately.</p>
+        </div>
+       
     </section>
 
     <section>
