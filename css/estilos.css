@@ -217,7 +217,7 @@ input[type='email']{
 }
 footer{
     background-color: #222;
-    height: 120px;
+    height: 200px;
     width: 100%;
     margin: auto;
     display: flex;
@@ -226,7 +226,7 @@ footer{
 footer .container{
     padding: 20px 30px;
     flex-direction: column;
-    padding: 20px 13px;
+    padding: 45px 13px
 }
 footer .container p{
     margin: 0px;
@@ -410,5 +410,4 @@ footer .container #linkGITHub:hover{
     #price, #painelItenscompra {
         padding-left: 20px;
     }
-    
 }
