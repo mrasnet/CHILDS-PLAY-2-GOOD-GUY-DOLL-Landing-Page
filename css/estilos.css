@@ -254,6 +254,7 @@ footer .container #linkGITHub:hover{
     color: #80a3b8;
 }
 
+/* RESPONSIVIDADE  */
 @media (max-width: 800px){
     .container{
         width: auto;
